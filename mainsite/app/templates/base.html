@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <title>Dashboard</title>
+    {% load static %}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+        html{
+            font-family: 'Noto Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .login-div{
+            border: 1px solid transparent;
+            padding: 10px;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         }
+
+         .register-div{
+            border: 1px solid transparent;
+            padding: 10px;
+            height: 550px;
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         }
+
+         .register-inner-div{
+            padding: 70px;
+            border: 1px solid transparent;
+            font-size: 17px;
+            position: absolute;
+            top: 13%;
+            left: 15%;
+         }
+
+
+         .back-to-login{
+            position: absolute;
+            top: -17%;
+            left: -70%;
+            text-decoration: none;
+            color: black;
+         }
+
+         .links-dashboard{
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+         }
+
+         .link-register{
+            margin-left: 150px;
+            text-decoration: none;
+            position: absolute;
+            top: 56%;
+            left: 39%;        
+            cursor: pointer;
+            outline: 0;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            color:  #208000;
+            border-color: #208000;
+         }
+
+         .link-login{
+                    position: absolute;
+                    top: 56%;
+                    left: 43%;     
+                    cursor: pointer;
+                    outline: 0;
+                    color: #fff;
+                    background-color: #0d6efd;
+                    border-color: #0d6efd;
+                    display: inline-block;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-align: center;
+                    text-decoration: none;
+                    border: 1px solid transparent;
+                    padding: 6px 12px;
+                    font-size: 16px;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+         }
+        
+
+.ul-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+}
+
+.li-nav {
+  float: left;
+}
+
+.li-nav .a-nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li-nav .a-nav:hover:not(.active) {
+  background-color: #111;
+}
+
+.active-nav {
+  background-color: #04AA6D;
+}
+
+
+        .login-input{
+            padding: 10px;
+            position: absolute;
+            top: 38%;
+            left: 42%;
+            width: 200px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        .register-input{
+            padding: 10px;
+            position: absolute;
+            top: 47%;
+            left: 42%;
+            width: 200px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+        .alert-message{
+            text-align: center;
+            font-size: 15px;
+            width: 300px;
+            height: 25px;
+            background-color: pink;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            position: absolute;
+            top: 23%;
+            left: 22%;
+        }
+
+        .alert-message-register{
+            text-align: center;
+            font-size: 15px;
+            width: 300px;
+            height: 25px;
+            background-color: pink;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            position: absolute;
+            top: 12%;
+            left: 22%;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}{% endblock content %}
+</body>
+</html>

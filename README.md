@@ -1,1 +1,2 @@
-# Calorie-Tracker
+# calorietracker
+calorie tracker using Django
